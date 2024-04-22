@@ -1,0 +1,63 @@
+day05
+topic:opps concept
+
+create  a class student
+which can hold the marks in 5 subjeacts 
+and also create a func to print the marks and calculate the avg of 5 subjects 
+
+class student:
+    def __init__(self,m):
+        self.marks=m
+
+    def avg(self):
+        s=0
+        for i in self.marks:
+            s+=i
+        return (s/len(self.marks))
+
+
+
+if __name__=='__main__':
+    st1=student([int(item) for item in input('enter marks for avg').split()])
+    st2=student([int(item) for item in input('enter marks for avg').split()])
+    st3=student([int(item) for item in input('enter marks for avg').split()])
+
+    print ('rohith =',st1.avg())
+    print ('tarun =',st2.avg())
+    print ('prabakar =',st3.avg())
+
+    if st1.avg()>st2.avg():
+        if st1.avg()>st3.avg():
+            print('rohith')
+        else:
+            print('prabakar')
+    else:
+        if st2.avg()>st3.avg():
+            print('tarun')
+        else:
+            print('prabakar')
+
+
+
+avg of a student marks 
+
+
+class student:
+    def __init__(self,m):
+        self.marks=m
+
+    def avg(self):
+        s=0
+        for i in self.marks:
+            s+=i
+        return (s/len(self.marks))
+
+
+
+if __name__=='__main__':
+    st1=student([int(item) for item in input('enter marks for avg').split()])
+
+    print ('rohith =',st1.avg())
+   
+        
+        
